@@ -1,0 +1,65 @@
+&lt;?php
+          /**
+          * Template Name: Contact Page
+          */
+          get_header(); ?&gt;
+          &lt;main class="page-content"&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="contact-grid"&gt;
+                &lt;div class="contact-info"&gt;
+                  &lt;div class="card-base"&gt;
+                    &lt;h3 class="card-title"&gt;Get in Touch&lt;/h3&gt;
+                    &lt;div class="contact-details"&gt;
+                      &lt;div class="contact-item"&gt;
+                        &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
+                        &lt;span&gt;hello@magicunicorn.tech&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="contact-item"&gt;
+                        &lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+                        &lt;span&gt;+1 (555) 123-4567&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="contact-item"&gt;
+                        &lt;i class="fa fa-map-marker-alt"&gt;&lt;/i&gt;
+                        &lt;span&gt;123 Innovation Street&lt;br /&gt;Tech Valley, CA 94025&lt;/span&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="social-links"&gt;
+                      &lt;a href="#" target="_blank" rel="noopener noreferrer"&gt;
+                        &lt;i class="fa fa-github"&gt;&lt;/i&gt;
+                      &lt;/a&gt;
+                      &lt;a href="#" target="_blank" rel="noopener noreferrer"&gt;
+                        &lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;
+                      &lt;/a&gt;
+                      &lt;a href="#" target="_blank" rel="noopener noreferrer"&gt;
+                        &lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="contact-form-container"&gt;
+                  &lt;form class="contact-form card-base"&gt;
+                    &lt;div class="form-group"&gt;
+                      &lt;label for="name"&gt;Name&lt;/label&gt;
+                      &lt;input type="text" id="name" required /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-group"&gt;
+                      &lt;label for="email"&gt;Email&lt;/label&gt;
+                      &lt;input type="email" id="email" required /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-group"&gt;
+                      &lt;label for="subject"&gt;Subject&lt;/label&gt;
+                      &lt;input type="text" id="subject" required /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-group"&gt;
+                      &lt;label for="message"&gt;Message&lt;/label&gt;
+                      &lt;textarea id="message" rows="5" required&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                    &lt;button type="submit" class="btn btn-primary"&gt;
+                      Send Message
+                    &lt;/button&gt;
+                  &lt;/form&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/main&gt;
+          &lt;?php get_footer(); ?&gt;

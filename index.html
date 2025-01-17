@@ -1,0 +1,47 @@
+&lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8" /&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+            &lt;title&gt;Magic Unicorn Tech&lt;/title&gt;
+            &lt;link rel="stylesheet" href="./src/styles/index.css" /&gt;
+            &lt;link rel="stylesheet" href="./static-components/Navbar/Navbar.css" /&gt;
+            &lt;link rel="stylesheet" href="./static-components/Hero/Hero.css" /&gt;
+            &lt;link rel="stylesheet" href="./static-components/ServiceOptions/ServiceOptions.css" /&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;div id="root"&gt;
+              &lt;!-- Navbar Component --&gt;
+              &lt;div id="navbar-container"&gt;&lt;/div&gt;
+          
+              &lt;!-- Hero Component --&gt;
+              &lt;div id="hero-container"&gt;&lt;/div&gt;
+
+              &lt;!-- Service Options Component --&gt;
+              &lt;div id="service-options-container"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;script type="module"&gt;
+              // This script fetches and inserts the Navbar component into the placeholder div
+              fetch('./static-components/Navbar/Navbar.html')
+                .then(response =&gt; response.text())
+                .then(html =&gt; {
+                  document.getElementById('navbar-container').innerHTML = html;
+                });
+          
+              // Fetch and insert the Hero component
+              fetch('./static-components/Hero/Hero.html')
+                .then(response =&gt; response.text())
+                .then(html =&gt; {
+                  document.getElementById('hero-container').innerHTML = html;
+                });
+
+              // Fetch and insert the Service Options component
+              fetch('./static-components/ServiceOptions/ServiceOptions.html')
+                .then(response =&gt; response.text())
+                .then(html =&gt; {
+                  document.getElementById('service-options-container').innerHTML = html;
+                });
+            &lt;/script&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
